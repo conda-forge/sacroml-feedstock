@@ -1,5 +1,5 @@
 {% set name = "sacroml" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d392983b4588a9b2dae7db0b969fc93d1659bcd686e6be5598f965fa8f097190
+  sha256: 1f4edf96f22fb29bffb3d55ad856be472d35d6b18626b5b4301804e723cda78e
 
 build:
   number: 0
@@ -26,10 +26,11 @@ requirements:
     - setuptools
     - pip
   run:
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }}
     - acro ==0.4.8
     - fpdf
     - pypdf
+    - dictdiffer
     - multiprocess
     - xgboost
     - scikit-learn >=1.0,<2.0

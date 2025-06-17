@@ -26,10 +26,11 @@ requirements:
     - setuptools
     - pip
   run:
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }}
     - acro ==0.4.8
     - fpdf
     - pypdf
+    - dictdiffer
     - multiprocess
     - dictdiffer
     - prompt-toolkit

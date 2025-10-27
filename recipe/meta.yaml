@@ -1,5 +1,5 @@
 {% set name = "sacroml" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9e0c7b4e2d3b4201b6ad152a8ac70046cf0dfa34ad6e5bd6b2bfef7c36089f5b
+  sha256: 439a1fa53a079688a40fe4ad0199323382a38897ae128d2edd6957be40a38081
 
 build:
   number: 0

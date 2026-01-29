@@ -1,5 +1,5 @@
 {% set name = "sacroml" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a4bb7fee50b98a6d4024b3fd6940acf3d06907b0bdefcab3fdda22ca7ac19c23
+  sha256: 7727ae4e605913b54a2971fae67ad6918a04420661ebaab0e5591a65521edc6c
 
 build:
   number: 0
@@ -30,13 +30,12 @@ requirements:
     - acro ==0.4.11
     - fpdf
     - pypdf
-    - dictdiffer
     - multiprocess
-    - dictdiffer
-    - prompt-toolkit
-    - xgboost
-    - pytorch
     - scikit-learn >=1.0,<2.0
+    - xgboost
+    - dictdiffer
+    - pytorch
+    - prompt-toolkit
 
 test:
   imports:
